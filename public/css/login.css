@@ -1,0 +1,99 @@
+body{
+    overflow-x:hidden;
+}
+.btn-login {
+    font-size: 16px;
+    padding: 8px;
+}
+.btn {
+    -moz-transition: all 120ms ease;
+    -webkit-box-shadow: none;
+    -webkit-transition: all 120ms ease;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 700;
+    padding: 10px 18px 9px;
+    text-transform: uppercase;
+    transition: all 120ms ease;
+}
+.btn-primary {
+    background-color: #FFCB04;
+    border-color: #FFCB04;
+    border-width: 2px;
+    color: #fff;
+}
+.btn-lg {
+    font-size: 16px;
+    padding: 16px;
+}
+.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
+    color: #FFCB04;
+    text-shadow: 1px 1px 0px #FFCB04;
+    -o-text-shadow: 1px 1px 0px #FFCB04;
+    -webkit-text-shadow: 1px 1px 0px #FFCB04;
+    -moz-text-shadow: 1px 1px 0px #FFCB04;
+    -ms-text-shadow: 1px 1px 0px #FFCB04;
+    background-color: transparent;
+    border-color: #FFCB04;
+}
+.text-button-shadow{
+    text-shadow: 0px 3px 0px rgba(0,0,0,0.25);
+    -webkit-text-shadow: 0px 3px 0px rgba(0,0,0,0.25);
+    -o-text-shadow: 0px 3px 0px rgba(0,0,0,0.25);
+    -moz-text-shadow: 0px 3px 0px rgba(0,0,0,0.25);
+}
+.copy-cont{
+    background:#162A75;
+    border-top:1px solid #ccc;
+    color:#fff;
+    min-height:50px;
+    padding:10px 20px;
+    margin-top: 20px;
+}
+.copy p{
+    text-align: center;
+}
+.container-form{
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 2px 5px 5px rgba(0,0,0,0.25);
+    -ms-border-radius: 5px;
+    -ms-box-shadow: 2px 5px 5px rgba(0,0,0,0.25);
+    -o-border-radius: 5px;
+    -o-box-shadow: 2px 5px 5px rgba(0,0,0,0.25);
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 2px 5px 5px rgba(0,0,0,0.25);
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.25);
+    padding: 30px;
+}
+.portal-main
+{
+    color: white;
+}
+/* INPUT LOGIN */
+/*.input-form:-webkit-autofill,
+{
+    background-color: rgba(255,255,255,0.75)!important;
+}
+input:focus{
+    background: rgba(255,255,255,0.5);
+}
+input{
+    background-color: rgba(255,255,255,0.60);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}*/
+input.login-input{
+    background-color: rgba(255,255,255,0.5);
+    color: #000;
+}
+input.login-input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: rgba(255,255,255,0.5);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
