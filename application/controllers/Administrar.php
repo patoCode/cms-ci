@@ -10,7 +10,7 @@ class Administrar extends CI_Controller
 		parent::__construct();
 		$this->load->model('Usuario_model','usuario');
 		$this->load->model('Encuesta_model','encuesta');
-		
+
 	}
 	public function index()
 	{
@@ -51,7 +51,7 @@ class Administrar extends CI_Controller
 				'categoria',
 				'descripcion',
 				'icono',
-				'estado',
+				'estado'
 					);
 		$crud->change_field_type('descripcion','text');
 		$crud->change_field_type('estado','enum',array('activo','inactivo'));

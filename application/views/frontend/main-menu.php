@@ -7,7 +7,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url('home');?>"><img src="<?php echo base_url() ?>public/imgs/base-logo.png" width="75"></a>
+            <a class="navbar-brand" href="<?php echo base_url('home');?>" style="padding: 4px!important">
+            	<img src="<?php echo base_url() ?>public/imgs/base-logo.png" width="50" >
+            </a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
