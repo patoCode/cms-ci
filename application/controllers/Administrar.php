@@ -19,6 +19,12 @@ class Administrar extends CI_Controller
 		$menu = $this->menu->getPrivilegios($this->session->userdata('id_cargo'));
 		$data['menu'] = $menu;
 	}
+	public function iconos(){
+
+		$data['plantilla'] = 'admin/iconos';
+		$this->load->view('admin/administrar', $data);
+		$this->load->view('admin/iconos');
+	}
 
 	public function categoria(){
 		$data['title'] ="Publicacion";
@@ -33,25 +39,28 @@ class Administrar extends CI_Controller
 				 		'descripcion',
 				 		'icono',
 				 		'estado',
-				 		'id_padre'
+				 		'id_padre','in_home', 'sys_cod'
 				 	   )
 			 ->display_as('categoria','Nombre')
 			 ->display_as('descripcion','Descripcion')
 			 ->display_as('icono','Icono')
 			 ->display_as('estado','Estado')
-			 ->display_as('id_padre','Superior');
+			 ->display_as('id_padre','Superior')
+			 ->display_as('in_home','Inicio?');
 		$crud->fields(
 				'categoria',
 				'descripcion',
 				'icono',
 				'estado',
-				'id_padre'
+				'id_padre',
+				'in_home'
 			);
 		$crud->required_fields(
 				'categoria',
 				'descripcion',
 				'icono',
-				'estado'
+				'estado',
+				'in_home'
 					);
 		$crud->change_field_type('descripcion','text');
 		$crud->change_field_type('estado','enum',array('activo','inactivo'));
@@ -887,22 +896,15 @@ class Administrar extends CI_Controller
 		$menu               = $this->menu->getPrivilegios($this->session->userdata('id_cargo'));
 		$data['menu']       = $menu;
 		$image_crud = new image_CRUD();
+		
 		$image_crud->set_primary_key_field('id_archivo');
 		$image_crud->set_url_field('path_archivo');
-		// if($id == 0)
-		// {
-		// 	$image_crud->set_table('com_archivo')
-		// 	->set_relation_field('id_album')
-		// 	->set_ordering_field('id_archivo')
-		// 	->set_image_path(PATH_FILE_RRHH);
-		// }
-		// else
-		// {
-			$image_crud->set_table('com_archivo')
-			->set_relation_field('id_album')
-			->set_ordering_field('id_archivo')
-			->set_image_path(PATH_ALBUMES);
-		// }
+
+		$image_crud->set_table('com_archivo')
+					->set_relation_field('id_album')
+					->set_ordering_field('id_archivo')
+					->set_image_path(PATH_ALBUMES);
+
 
 
 		$output = $image_crud->render();

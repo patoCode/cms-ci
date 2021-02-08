@@ -25,7 +25,7 @@
 					<div class="col-sm-4" ng-repeat="funcionario in funcionarios | filter:query | orderBy:orderProp">
 						<div class="contenedor-funcionario center" >
 			               	<a href="<?php echo base_url() ?>funcionario/detalle/{{funcionario.id_funcionario}}" data-toggle="modal" data-target="#myModal{{funcionario.id_funcionario}}">
-			               		<div class="perfil-picture shadow" style="background-image: url(<?php echo base_url().PATH_FOTO_FUNCIONARIO;?>{{funcionario.path_foto}})"></div>
+			               		<div class="perfil-picture shadow" style="background-image: url('https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg')"></div>
 			               	</a>
 			                <h5>
 			                	<a href="<?php echo base_url() ?>funcionario/detalle/{{funcionario.id_funcionario}}" data-toggle="modal" data-target="#myModal{{funcionario.id_funcionario}}">
@@ -34,10 +34,10 @@
 			                	</a>
 			                </h5>
 			                <p>
-								<a class="btn blue-ende" href="#" data-toggle="tooltip" title="{{funcionario.interno}}" data-original-title="{{funcionario.interno}}" data-placement="bottom">
+								<a class="btn blue-cms" href="#" data-toggle="tooltip" title="{{funcionario.interno}}" data-original-title="{{funcionario.interno}}" data-placement="bottom">
 									<i class="icon-phone"></i>
 								</a>
-								<a class="btn blue-ende" href="mailto:{{funcionario.email_ende}}" data-toggle="tooltip" title="{{funcionario.email_ende}}" data-original-title="{{funcionario.email_ende}}" data-placement="bottom">
+								<a class="btn blue-cms" href="mailto:{{funcionario.email_ende}}" data-toggle="tooltip" title="{{funcionario.email_ende}}" data-original-title="{{funcionario.email_ende}}" data-placement="bottom">
 									<i class="icon-envelope"></i>
 								</a>
 			                </p>

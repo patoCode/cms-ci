@@ -9,7 +9,7 @@ class Funcionario_model extends CI_Model
 	{
 		$this->db->select('id_funcionario,nombres,CONCAT(nombres," ",CONCAT(apellido_pat," ",apellido_mat)) as nombre_completo, apellido_pat, apellido_mat, nombres, cumpleanio, cargo, email_ende, jefe_inmediato, path_foto, interno, celular, lugar_trabajo,unidad_organizacional',FALSE);
 		$this->db->from('com_funcionario');
-		//$this->db->where('path_foto != ', 'primera/');
+		
 		$this->db->order_by('nombres', 'desc');
 		$query = $this->db->get();
 		return $query->result();

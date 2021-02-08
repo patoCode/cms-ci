@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 	<title><?php echo COMPANY_INTRANET;?></title>
-	<link rel="shortcut icon" href="<?php echo base_url() ?>public/imgs/favicon.png" />
+	<link rel="shortcut icon" href="<?php echo base_url() ?>public/imgs/my-logo.png" />
 	<link rel="stylesheet" href="<?php echo base_url() ?>public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url() ?>public/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url() ?>public/css/login.css">
@@ -31,7 +31,7 @@
 			<div class="row">
 				<div class="container-form col-md-offset-4 col-sm-4 col-xs-12 text-center">
 					<h3 class="text-center portal-main text-button-shadow"><?php echo COMPANY_INTRANET;?></h3>
-					<img src="<?php echo base_url(); ?>public/imgs/my-logo.jpeg" alt="<?php echo COMPANY_INTRANET;?>" width="75%">
+					<img src="<?php echo base_url(); ?>public/imgs/my-logo.png" alt="<?php echo COMPANY_INTRANET;?>" width="75%">
 					<form action="<?php echo base_url(); ?>login/checkLogin" method="POST" style="margin-top:50px;">
 						<div class="form-group">
 							<input type="text" name="login" class="form-control input-form login-input" placeholder="Login">

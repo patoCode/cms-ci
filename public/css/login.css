@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: #3be8b0;
+    --link-color: #1aafd0;
+    --link-hover-color: #6a67ce; 
+    --body-main-color: #232323;
+  }
+
 body{
     overflow-x:hidden;
 }
@@ -17,8 +24,8 @@ body{
     transition: all 120ms ease;
 }
 .btn-primary {
-    background-color: #FFCB04;
-    border-color: #FFCB04;
+    background-color: var(--link-color);
+    border-color: var(--link-color);
     border-width: 2px;
     color: #fff;
 }
@@ -27,14 +34,14 @@ body{
     padding: 16px;
 }
 .btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
-    color: #FFCB04;
-    text-shadow: 1px 1px 0px #FFCB04;
-    -o-text-shadow: 1px 1px 0px #FFCB04;
-    -webkit-text-shadow: 1px 1px 0px #FFCB04;
-    -moz-text-shadow: 1px 1px 0px #FFCB04;
-    -ms-text-shadow: 1px 1px 0px #FFCB04;
+    color: var(--link-color);
+    text-shadow: 1px 1px 0px var(--link-color);
+    -o-text-shadow: 1px 1px 0px var(--link-color);
+    -webkit-text-shadow: 1px 1px 0px var(--link-color);
+    -moz-text-shadow: 1px 1px 0px var(--link-color);
+    -ms-text-shadow: 1px 1px 0px var(--link-color);
     background-color: transparent;
-    border-color: #FFCB04;
+    border-color: var(--link-color);
 }
 .text-button-shadow{
     text-shadow: 0px 3px 0px rgba(0,0,0,0.25);

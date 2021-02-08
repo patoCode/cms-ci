@@ -7,7 +7,8 @@
 			<span class="icon-bar"></span>
 		</button>
 		<a class="navbar-brand" href="<?php echo base_url() ?>Administrar/archivo">
-            <img src="<?php echo base_url() ?>public/imgs/base-logo.png" alt="<?php echo COMPANY_NAME;?>" width="58">
+            <img src="<?php echo base_url() ?>public/imgs/my-logo.png" 
+				alt="<?php echo COMPANY_NAME;?>" width="58" class="img-responsive img-circle" style="background:white;">
 		</a>
 	</div>
 	<div class="navbar-collapse collapse">

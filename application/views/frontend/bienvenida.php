@@ -24,13 +24,14 @@
                         <div class="col-sm-12">
                             <div class="carousel-content center centered">
                                 <h2 class="boxed animation animated-item-1">Pensamiento del Día</h2>
-                                <p class="boxed animation animated-item-2">
+                                <br>
+                                <div class="boxed animation animated-item-2">
                                     <?php
                                     foreach ($mensaje as $msj) {
-                                        echo $msj->mensaje.'<br>'.$msj->autor;
+                                        echo $msj->mensaje.$msj->autor;
                                     }
                                     ?>
-                                </p>
+                                </div>
                                 <br>
                                 <!-- <a class="btn btn-md animation animated-item-3" href="#">Learn More</a> -->
                             </div>

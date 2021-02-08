@@ -23,11 +23,9 @@ class Categoria_model extends CI_model
 	public function getHomeCategory()
 	{
 		$this->db->where('estado', 'activo');
-		$this->db->where('id_categoria !=', '26');
-		$this->db->where('id_categoria !=', '27');
-		$this->db->where('id_padre', '0');
+		$this->db->where('in_home', 'si');
 		$this->db->order_by('categoria', 'asc');
-		$query = $this->db->get('com_categoria');
+		$query = $this->db->get('com_categoria');		
 		return $query->result();
 	}
 	public function esPadre($id)

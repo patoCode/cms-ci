@@ -1,12 +1,16 @@
-<div class="blue-ende modal-func" style="min-height:300px;padding-bottom:20px;">
-	<div class="modal-funcionario">
+<div class="modal-func" style="min-height:300px;padding-bottom:20px;">
+	<div class="modal-content">
+	<div class="modal-header yellow-cms">
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white">
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<?php foreach ($funcionario as $funcionario): ?>
-		<h3 class="text-center" style="color:white;">
+		<h3 class="text-center" style="color:white;"> 
 			<?php echo $funcionario->nombres.' '.$funcionario->apellido_pat.' '.$funcionario->apellido_mat; ?>
 		</h3>
+	</div>
+	<div class="modal-body">
+		<div class="row">
 		<div class="col-md-5">
 		<?php if($funcionario->path_foto != 'primera/-1' && $funcionario->path_foto != "" && $funcionario->path_foto != NULL && $funcionario->path_foto != "primera/hombrend.jpg"): ?>
 				<div class="perfil-picture shadow" style="background-image: url(<?php echo base_url().PATH_FOTO_FUNCIONARIO.$funcionario->path_foto;?>)"></div>
@@ -45,6 +49,10 @@
 				<i class="fa fa-fw fa-birthday-cake"></i> Enviar Felicitación
 			</a>
 		</div>
+		</div>
+	</div>		
+		
+		
 	</div>
 </div>
 <script>

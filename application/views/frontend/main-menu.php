@@ -1,4 +1,4 @@
-<header class="navbar navbar-inverse navbar-fixed-top dark-blue-ende" role="banner">
+<header class="navbar navbar-inverse navbar-fixed-top dark-blue-cms" role="banner">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -7,8 +7,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url('home');?>" style="padding: 4px!important">
-            	<img src="<?php echo base_url() ?>public/imgs/base-logo.png" width="50" >
+            <a class="navbar-brand" href="<?php echo base_url('home');?>" style="padding: 14px 6px!important">
+            	<img src="<?php echo base_url() ?>public/imgs/my-logo.png" width="50" class="img-responsive img-circle" style="background: white">
             </a>
         </div>
         <div class="collapse navbar-collapse">

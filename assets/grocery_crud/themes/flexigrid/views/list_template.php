@@ -56,7 +56,7 @@ if($success_message !== null){?>
 		<div class="tDiv3">
 			<?php if(!$unset_export) { ?>
         	<a class="btn btn-info btn-sm" href="<?php echo $export_url; ?>" download>
-				<i class="fa fa-file-excel"></i>
+				<i class="fa fa-file-excel-o"></i>
 				<span class="export"><?php echo $this->l('list_export');?></span>
 
             </a>
@@ -78,12 +78,12 @@ if($success_message !== null){?>
 		<?php echo $list_view?>
 	</div>
 	<div class="row">
-		<?php echo form_open( $ajax_list_url, 'method="post" id="filtering_form" class="filtering_form form-inline col-md-12" autocomplete = "off" data-ajax-list-info-url="'.$ajax_list_info_url.'"'); ?>
-		<div class="col-md-12" id='quickSearchBox'>
-			<label for="list" class="form-control">
+		<?php echo form_open( $ajax_list_url, 'method="post" id="filtering_form" class="filtering_form form col-md-12" autocomplete = "off" data-ajax-list-info-url="'.$ajax_list_info_url.'"'); ?>
+		<div class="form-group" id='quickSearchBox'>
+			<label for="list" class="">
 				<?php echo $this->l('list_search');?>:
 			</label>
-			<input type="text" class="qsbsearch_fieldox search_text form-control" name="search_text" size="30" id='search_text'>
+			<input type="text" class="qsbsearch_fieldox search_text" name="search_text" size="30" id='search_text'>
 			<select name="search_field" id="search_field" class="custom-select my-1 mr-sm-22">
 				<option value=""><?php echo $this->l('list_search_all');?></option>
 				<?php foreach($columns as $column){?>
@@ -93,7 +93,7 @@ if($success_message !== null){?>
             <input type="button" value="<?php echo $this->l('list_search');?>" class="crud_search btn btn-primary" id='crud_search'>
             <input type="button" value="<?php echo $this->l('list_clear_filtering');?>" id='search_clear' class="search_clear btn btn-danger">
 		</div>
-		<div class="pDiv col-md-12 bg-white align-baseline">
+		<div class="pDiv form-group bg-white align-baseline">
 		<div class="pDiv2">
 			<div class="pGroup">
 				<span class="pcontrol">

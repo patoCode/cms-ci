@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="ENDE CORPORACIÓN - UTIN 2015">
+    <meta name="author" content="Localhost">
     <title><?php echo COMPANY_INTRANET;?></title>
     <link href="<?php echo base_url() ?>public/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>public/css/font-awesome.min.css" rel="stylesheet">

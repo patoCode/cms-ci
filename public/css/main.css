@@ -1,5 +1,11 @@
 /*@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);|||*/
 /* FONTS */
+:root {
+  --main-bg-color: #3be8b0;
+  --link-color: #1aafd0;
+  --link-hover-color: #6a67ce; 
+  --body-main-color: #232323;
+}
 @font-face {
     font-family: 'Roboto';
     src: url('fonts-cms/roboto-regular-webfont.eot');
@@ -11,12 +17,7 @@
     font-weight: normal;
     font-style: normal;
 }
-:root {
-  --main-bg-color: brown;
-  --link-color: ;
-  --link-hover-color: #a07171; 
-  --body-main-color: #232323;
-}
+
 .navbar-default{
   background-color: var(--main-bg-color)!important;
 }
@@ -120,10 +121,10 @@ body > section {
 .midnight-blue,
 .concrete,
 .asbestos,
-.blue-ende,
-.purple-ende,
-.yellow-ende,
-.dark-blue-ende {
+.blue-cms,
+.purple-cms,
+.yellow-cms,
+.dark-blue-cms {
   color: #fff;
 }
 .turquoise h1,
@@ -142,10 +143,10 @@ body > section {
 .wisteria h1,
 .clouds .silver h1,
 .wet-asphalt h1,
-.blue-ende h1,
-.purple-ende h1,
-.yellow-ende h1,
-.dark-blue-ende h1,
+.blue-cms h1,
+.purple-cms h1,
+.yellow-cms h1,
+.dark-blue-cms h1,
 .midnight-blue h1,
 .concrete h1,
 .asbestos h1,
@@ -168,10 +169,10 @@ body > section {
 .midnight-blue h2,
 .concrete h2,
 .asbestos h2,
-.blue-ende h2,
-.purple-ende h2,
-.yellow-ende h2,
-.dark-blue-ende h2,
+.blue-cms h2,
+.purple-cms h2,
+.yellow-cms h2,
+.dark-blue-cms h2,
 .turquoise h3,
 .green-sea h3,
 .sun-flower h3,
@@ -191,10 +192,10 @@ body > section {
 .midnight-blue h3,
 .concrete h3,
 .asbestos h3,
-.blue-ende h3,
-.purple-ende h3,
-.yellow-ende h3,
-.dark-blue-ende h3,
+.blue-cms h3,
+.purple-cms h3,
+.yellow-cms h3,
+.dark-blue-cms h3,
 .turquoise h4,
 .green-sea h4,
 .sun-flower h4,
@@ -214,10 +215,10 @@ body > section {
 .midnight-blue h4,
 .concrete h4,
 .asbestos h4,
-.blue-ende h4,
-.purple-ende h4,
-.yellow-ende h4,
-.dark-blue-ende h4,
+.blue-cms h4,
+.purple-cms h4,
+.yellow-cms h4,
+.dark-blue-cms h4,
 .turquoise h5,
 .green-sea h5,
 .sun-flower h5,
@@ -237,10 +238,10 @@ body > section {
 .midnight-blue h5,
 .concrete h5,
 .asbestos h5,
-.blue-ende h5,
-.purple-ende h5,
-.yellow-ende h5,
-.dark-blue-ende h5,
+.blue-cms h5,
+.purple-cms h5,
+.yellow-cms h5,
+.dark-blue-cms h5,
 .turquoise h6,
 .green-sea h6,
 .sun-flower h6,
@@ -260,10 +261,10 @@ body > section {
 .midnight-blue h6,
 .concrete h6,
 .asbestos h6
-.blue-ende h6,
-.purple-ende h6,
-.yellow-ende h6,
-.dark-blue-ende h6 {
+.blue-cms h6,
+.purple-cms h6,
+.yellow-cms h6,
+.dark-blue-cms h6 {
   color: #fff;
 }
 .turquoise small,
@@ -285,10 +286,10 @@ body > section {
 .midnight-blue small,
 .concrete small,
 .asbestos small
-.blue-ende small,
-.purple-ende small,
-.yellow-ende small,
-.dark-blue-ende small{
+.blue-cms small,
+.purple-cms small,
+.yellow-cms small,
+.dark-blue-cms small{
   color: rgba(255, 255, 255, 0.8);
 }
 .turquoise {
@@ -357,16 +358,16 @@ body > section {
 .concrete {
   background-color: #95a5a6;
 }
-.blue-ende {
+.blue-cms {
   background-color: var(--main-bg-color);
 }
-.purple-ende {
+.purple-cms {
   background-color: #5E6CB3;
 }
-.yellow-ende {
-  background-color:var(--link-hover-color);
+.yellow-cms {
+  background-color: var(--link-hover-color);
 }
-.dark-blue-ende {
+.dark-blue-cms {
   background-color: var(--main-bg-color);
 }
 .asbestos {
@@ -796,7 +797,8 @@ ul.tag-cloud li {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 4px;
-  color: #bdc3c7;
+  color: var(--body-main-color);
+  text-transform: uppercase;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -1252,16 +1254,16 @@ ul.faq li > div h3 {
 .perfil-picture:hover{
     cursor: pointer;
 }
-a.blue-ende{
+a.blue-cms{
   color:#fff;
-  background-color: rgba(22,42,117,0.90);
+  background-color: var(--main-bg-color);
   border-bottom:4px solid var(--main-bg-color);
 }
-a.blue-ende:hover{
-  background-color: var(--main-bg-color);
+a.blue-cms:hover{
+  background-color: var(--link-hover-color);
   color:white;
 }
-a.blue-ende:active{
+a.blue-cms:active{
   border-bottom:1px solid;
 }
 /* MODAL FUNCIONARIO */
@@ -1290,6 +1292,7 @@ a.blue-ende:active{
   border:2px solid white;
   color:white;
   padding: 3px 5px;
+  background: var(--link-color);
 }
 .button-happy:hover{
   border-color:var(--link-hover-color);

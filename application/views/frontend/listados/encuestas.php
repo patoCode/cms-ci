@@ -19,12 +19,16 @@
 <div class="row">
 	<div class="container" style="margin-top:50px;min-height:485px;">
 		<div class="col-md-12">
-            <?php if(count($elementos)>0):?>
+            <?php 
+                $cantidad = count((array) $elementos);      
+                
+                if($cantidad>0):
+                    ?>
             <!-- INICIO TABS DE ENCUESTAS -->
-            <?php for ($i=0; $i < count($elementos); $i++):?>
+            <?php for ($i=0; $i < $cantidad; $i++): ?>
                 <?php
-                $cont = 0;
-                for($j=0; $j< count((array)$elementos[$i][0]);$j++):
+                    $cont = 0;
+                    for($j=1; $j< count((array)$elementos[$i]);$j++):
                 ?>
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">

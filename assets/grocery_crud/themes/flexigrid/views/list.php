@@ -38,7 +38,7 @@
 				<div class='tools'>
 					<?php if(!$unset_delete){?>
                     	<a href='<?php echo $row->delete_url?>' title='<?php echo $this->l('list_delete')?> <?php echo $subject?>' class="delete-row btn btn-danger" >
-                    		<i class="fa fa-trash-alt"></i>
+                    		<i class="fa fa-trash"></i>
                     	</a>
                     <?php }?>
                     <?php if(!$unset_edit){?>
@@ -48,7 +48,7 @@
 					<?php }?>
                     <?php if(!$unset_clone){?>
                         <a href='<?php echo $row->clone_url?>' title='Clone <?php echo $subject?>' class="clone_button btn btn-info">
-							<i class="fa fa-equals"></i>
+							<i class="fa fa-share"></i>
                         </a>
                     <?php }?>
 					<?php if(!$unset_read){?>

@@ -30,7 +30,7 @@
     <!-- MENU ADMINISTRACION -->
     <?php $this->load->view('admin/menu'); ?>
     <!-- FIN MENU ADMINISTRACION -->
-    <div class="container">
+    <div class="container" style="background:white;">
     
     <?php if(!isset($output)): ?>
         

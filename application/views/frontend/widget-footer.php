@@ -21,30 +21,7 @@
 							Encuestas
 						</a>
 					</li>
-					<li>
-						<a href="<?php echo base_url(); ?>Listado/archivo/23">
-							<i class="fa fa-institution"></i>
-							&nbsp;Biblioteca Digital de Capacitaciones
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo base_url().PATH_UTILES.'guia.pdf'; ?>" target="_blank">
-							<i class="fa fa-phone-square"></i>
-							&nbsp;Gu&iacute;a Telefonica
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo base_url(); ?>Listado/archivo/12">
-							<i class="fa fa-archive"></i>
-							&nbsp;Hemeroteca
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo base_url().PATH_UTILES.'zimbra.pdf'; ?>" target="_blank">
-							<i class="fa fa-book"></i>
-							&nbsp;Manual de Zimbra
-						</a>
-					</li>
+					
 				</ul>
             </div><!--/.col-md-3-->
             <div class="<?php echo $bandera; ?>">
@@ -62,7 +39,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Busqueda..." name="busqueda">
                         <span class="input-group-btn">
-                        	<input type="submit" class="btn blue-ende btn-color-white" value="Buscar">
+                        	<input type="submit" class="btn blue-cms btn-color-white" value="Buscar">
                         </span>
                     </div>
                 </form>
@@ -103,7 +80,7 @@
 					<div class="media">
                         <div class="pull-left">
                     		<a href="<?php echo base_url() ?>funcionario/detalleCumpleaniero/<?php echo $cd->id_funcionario;?>" data-toggle="modal" data-target="#myModal<?php echo $cd->id_funcionario;?>">
-                    			<?php if( $cd->path_foto != "primera/hombrend.jpg" && $cd->path_foto != "primera/-1" && $cd->path_foto != "primera/"): ?>
+                    			<?php if( $cd->path_foto != "primera/hombrend.jpg" && $cd->path_foto != "") : ?>
 									<img src="<?php echo base_url().PATH_FOTO_FUNCIONARIO.$cd->path_foto; ?>" alt="<?php echo $cd->nombres.' '.$cd->apellido_pat.' '.$cd->apellido_mat; ?>" title="Hoy es el cumplea&ntilde;os de <?php echo $cd->nombres.' '.$cd->apellido_pat.' '.$cd->apellido_mat; ?>" width="54">
 								<?php else: ?>
 									<img src="<?php echo base_url().PATH_FOTO_FUNCIONARIO.'user_default.png'; ?>" class="img-responsive" alt="<?php echo $cd->nombres.' '.$cd->apellido_pat.' '.$cd->apellido_mat; ?>" width="54">
@@ -111,11 +88,11 @@
                             </a>
                         </div>
                         <div class="media-body" style="line-height:0.9">
-                            <span class="media-heading">
+                            <p class="media-heading">
                             	<a href="<?php echo base_url() ?>funcionario/detalleCumpleaniero/<?php echo $cd->id_funcionario;?>" data-toggle="modal" data-target="#myModal<?php echo $cd->id_funcionario;?>">
                             			<?php echo $cd->nombres.' '.$cd->apellido_pat.' '.$cd->apellido_mat; ?>
                             	</a>
-                            </span>
+							</p>
                             <small class="muted">
                             	<?php echo $cd->unidad_organizacional; ?>
                             </small>
@@ -169,7 +146,7 @@
 	</div>
 </div>
 <!-- FIN MODAL CALENDARIO -->
-<footer id="footer" class="dark-blue-ende">
+<footer id="footer" class="">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
